@@ -1,0 +1,429 @@
+@import "./node_modules/tailwindcss/dist/tailwind.min.css";
+@import "./node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+@import "./node_modules/@glidejs/glide/dist/css/glide.theme.min.css";
+
+html,
+body {
+    font-size: 16px;
+}
+
+body {
+    background-color: #bfffe3;
+}
+
+span.btn {
+    color: white;
+}
+
+svg {
+    fill: none;
+    stroke: white;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@media (min-width: 25em) {
+    .left-float {
+        float: left;
+    }
+}
+
+.theme-block {
+    width: 8em;
+}
+
+@media (min-width: 12em) {
+    .theme-block {
+        width: 9em;
+    }
+}
+
+@media (min-width: 14em) {
+    .theme-block {
+        width: 10em;
+    }
+}
+
+@media (min-width: 16em) {
+    .theme-block {
+        width: 10.5em;
+    }
+}
+
+@media (min-width: 21em) {
+    .theme-block {
+        width: 13em;
+    }
+}
+
+@media (min-width: 27em) {
+    .theme-block {
+        width: 15.8em;
+    }
+}
+
+@media (min-width: 30em) {
+    .theme-block {
+        width: 18.15em;
+    }
+}
+
+@media (min-width: 35em) {
+    .theme-block {
+        width: 25em;
+    }
+}
+
+@media (min-width: 40em) {
+    .theme-block {
+        width: 35em;
+    }
+}
+
+@media (min-width: 45em) {
+    .theme-block {
+        width: 40em;
+    }
+}
+
+@media (min-width: 50em) {
+    .theme-block {
+        width: 45em;
+    }
+}
+
+.theme-color-block {
+    display: grid;
+    grid-template-columns: repeat(1, 6em);
+    grid-auto-rows: 6em;
+}
+
+@media (min-width: 15em) {
+    .theme-color-block {
+        grid-template-columns: repeat(2, 6em);
+    }
+}
+
+@media (min-width: 20em) {
+    .theme-color-block {
+        grid-template-columns: repeat(3, 6em);
+    }
+}
+
+@media (min-width: 25em) {
+    .theme-color-block {
+        grid-template-columns: repeat(1, 6em);
+    }
+}
+
+@media (min-width: 27em) {
+    .theme-color-block {
+        grid-template-columns: repeat(2, 6em);
+    }
+}
+
+@media (min-width: 35em) {
+    .theme-color-block {
+        grid-template-columns: repeat(3, 6em);
+    }
+}
+
+@media (min-width: 40em) {
+    .theme-color-block {
+        grid-template-columns: repeat(4, 6em);
+    }
+}
+
+@media (min-width: 45em) {
+    .theme-color-block {
+        grid-template-columns: repeat(5, 6em);
+    }
+}
+
+@media (min-width: 50em) {
+    .theme-color-block {
+        grid-template-columns: repeat(6, 6em);
+    }
+}
+
+.terminal-color-block {
+    display: grid;
+    grid-template-columns: repeat(1, 6em);
+    grid-auto-rows: 6em;
+}
+
+@media (min-width: 15em) {
+    .terminal-color-block {
+        grid-template-columns: repeat(2, 6em);
+    }
+}
+
+@media (min-width: 20em) {
+    .terminal-color-block {
+        grid-template-columns: repeat(3, 6em);
+    }
+}
+
+@media (min-width: 40em) {
+    .terminal-color-block {
+        grid-template-columns: repeat(6, 6em);
+    }
+}
+
+.color-scale-block {
+    display: grid;
+    grid-template-columns: repeat(1, 5.25em);
+}
+
+@media (min-width: 40em) {
+    .color-scale-block {
+        grid-template-columns: repeat(2, 5.25em);
+    }
+}
+
+.color-scale {
+    display: grid;
+    grid-template-columns: repeat(1, 6em);
+    grid-auto-rows: 2em;
+}
+
+.sub-color-scale-block {
+    display: grid;
+    grid-template-columns: repeat(1, 6em);
+    grid-auto-rows: 2em;
+}
+
+.sub-color-block {
+    display: grid;
+    grid-template-columns: repeat(3, 2em);
+    grid-auto-rows: 2em;
+}
+
+.terminal-layout div,
+.sub-color-block div,
+.sub-color-scale-block div,
+.color-scale div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-preview,
+.dark-terminal {
+    background-color: #bfffe3;
+}
+
+.btn,
+.bright-preview,
+.dark-theme,
+footer {
+    background-color: #2e2e00;
+}
+
+.dark-preview .glide__arrow {
+    box-shadow: none !important;
+    border: none !important;
+    color: white;
+    opacity: 0.5 !important;
+}
+
+.dark-preview .glide__bullet {
+    background-color: #bfffe3;
+}
+
+.dark-preview .glide__bullet:hover {
+    background-color: #bfffe3;
+    border: 2px solid white;
+}
+
+.dark-preview .glide__bullet--active {
+    background-color: white;
+}
+
+.bright-preview .glide__arrow {
+    box-shadow: none !important;
+    border: none !important;
+    color: black;
+    opacity: 0.5 !important;
+}
+
+.bright-preview .glide__bullet {
+    background-color:#2e2e00;
+}
+
+.bright-preview .glide__bullet:hover {
+    background-color: white;
+    border: 2px solid #2e2e00;
+}
+
+.bright-preview .glide__bullet--active {
+    background-color: white;
+}
+
+.glide__arrow--right {
+    right: 1em !important;
+}
+
+.glide__arrow--left {
+    left: 1em !important;
+}
+
+.dark-theme .r-00-red-xxxxxxxxxxxxxxxx,
+.dark-terminal .r-00-red-xxxxxxxxxxxxxxxx {
+    background-color: #FF2C6D;
+}
+
+.dark-theme .r-01-red-alpha-xxxxxxxxxx {
+    background-color: #FF2C6DB3;
+}
+
+.dark-theme .r-02-bright-red-xxxxxxxxx,
+.dark-terminal .r-02-bright-red-xxxxxxxxx {
+    background-color: #FF4B82;
+}
+
+.dark-theme .r-03-diff-red-xxxxxxxxxxx {
+    background-color: #FF4B8280;
+}
+
+.dark-theme .r-04-magenta-xxxxxxxxxxxx {
+    background-color: #FF75B5;
+}
+
+.dark-theme .r-05-bright-magenta-xxxxx {
+    background-color: #FF9AC1;
+}
+
+.dark-theme .r-06-bright-magenta-alpha {
+    background-color: #FF9AC180;
+}
+
+.dark-theme .r-07-yellow-xxxxxxxxxxxxx,
+.dark-terminal .r-07-yellow-xxxxxxxxxxxxx {
+    background-color: #FFB86C;
+}
+
+.dark-theme .r-08-bright-yellow-xxxxxx,
+.dark-terminal .r-08-bright-yellow-xxxxxx {
+    background-color: #FFCC95;
+}
+
+.dark-theme .r-09-bright-yellow-alpha- {
+    background-color: #FFCC954D;
+}
+
+.dark-theme .r-10-green-xxxxxxxxxxxxxx,
+.dark-terminal .r-10-green-xxxxxxxxxxxxxx {
+    background-color: #19F9D8;
+}
+
+.dark-theme .r-11-diff-green-xxxxxxxxx {
+    background-color: #19F9D880;
+}
+
+.dark-theme .r-12-green-alpha-xxxxxxxx {
+    background-color: #19F9D8E6;
+}
+
+.dark-theme .r-13-bright-green-xxxxxxx,
+.dark-terminal .r-13-bright-green-xxxxxxx {
+    background-color: #6FE7D2;
+}
+
+.dark-theme .r-14-bright-cyan-xxxxxxxx,
+.dark-terminal .r-14-bright-cyan-xxxxxxxx {
+    background-color: #6BE4E6;
+}
+
+.dark-theme .r-15-cyan-xxxxxxxxxxxxxxx,
+.dark-terminal .r-15-cyan-xxxxxxxxxxxxxxx {
+    background-color: #59E1E3;
+}
+
+.dark-theme .r-16-bright-blue-xxxxxxxx,
+.dark-terminal .r-16-bright-blue-xxxxxxxx {
+    background-color: #6FC1FF;
+}
+
+.dark-theme .r-17-blue-xxxxxxxxxxxxxxx,
+.dark-terminal .r-17-blue-xxxxxxxxxxxxxxx {
+    background-color: #45A9F0;
+}
+
+.dark-theme .r-18-bright-purple-xxxxxx,
+.dark-terminal .r-18-bright-purple-xxxxxx {
+    background-color: #BCAAFE;
+}
+
+.dark-theme .r-19-purple-alpha-xxxxxxx {
+    background-color: #B084EB80;
+}
+
+.dark-theme .r-20-purple-xxxxxxxxxxxxx,
+.dark-terminal .r-20-purple-xxxxxxxxxxxxx {
+    background-color: #B084EB;
+}
+
+.dark-theme .wb-00-white-xxxxxxxxxxxxx {
+    background-color: #FFFFFF;
+}
+
+.dark-theme .wb-01-very-bright-gray-xx {
+    background-color: #E6E6E6;
+}
+
+.dark-theme .wb-02-brighter-gray-alpha {
+    background-color: #CDCDCD1A;
+}
+
+.dark-theme .wb-03-brighter-gray-xxxxx {
+    background-color: #CDCDCD;
+}
+
+.dark-theme .wb-04-contrast-gray-xxxxx {
+    background-color: #BBBBBB;
+}
+
+.dark-theme .wb-05-bright-gray-xxxxxxx {
+    background-color: #757575;
+}
+
+.dark-theme .wb-06-bright-midnight-xxx {
+    background-color: #676B79;
+}
+
+.dark-theme .wb-07-steel-gray-xxxxxxxx {
+    background-color: #4E5260;
+}
+
+.dark-theme .wb-08-gray-alpha-xxxxxxxx {
+    background-color: #373B41B3;
+}
+
+.dark-theme .wb-09-gray-xxxxxxxxxxxxxx {
+    background-color: #373B41;
+}
+
+.dark-theme .wb-10-seal-xxxxxxxxxxxxxx {
+    background-color: #31353A;
+}
+
+.dark-theme .wb-11_very-dark-gray-xxxx {
+    background-color: #2A2C2D;
+}
+
+.dark-theme .wb-12-charcoal-xxxxxxxxxx {
+    background-color: #222223;
+}
+
+.dark-theme .wb-13-black-xxxxxxxxxxxxx,
+.dark-terminal .wb-13-black-xxxxxxxxxxxxx {
+    background-color: #000000;
+}
+
+.dark-theme .wb-14-black-xxxxxxxxxxxxx,
+.dark-terminal .wb-14-black-xxxxxxxxxxxxx {
+    background-color: #00000000;
+}
+
