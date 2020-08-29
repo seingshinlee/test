@@ -6,7 +6,7 @@
   "author": "Seingshin Lee <seingshinlee@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html -p 1314"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
